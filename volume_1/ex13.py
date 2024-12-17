@@ -1,18 +1,18 @@
 while True:
 
-    user_input = input("Por favor, ingrese su nombre: ").lower().title()
+    user_input = input("Please enter your name: ").lower().title()
 
     if not user_input.isalpha():
-        print("Debe ingresar un nombre válido")
+        print("You must enter a valid name.")
     elif user_input == "Alejandro":
-        print("Bienvenido Alejandro.")
+        print("Welcome Alejandro.")
         break
     elif user_input == "Naomi":
-        print("Bienvenida Naomi")
+        print("Welcome Naomi.")
         break
     elif user_input == "Sergio":
-        print("Bienvenido Sergio")
+        print("Welcome Sergio.")
         break
     else:
-        print("Bienvenido invidato/a")
+        print("Welcome guest.")
         break
