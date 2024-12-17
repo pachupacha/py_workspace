@@ -1,5 +1,6 @@
 print("Restaurant ´The Galician´")
 
+
 mixed_salad = input("Portions of Mixed Salad consumed at the table: ")
 fish_soup = input("Portions of Fish Soup consumed at the table: ")
 baked_sea_bream = input("Portions of Baked Sea Bream consumed at the table: ")
