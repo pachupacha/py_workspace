@@ -1,51 +1,51 @@
 while True:
-    nombre = input("Ingrese su nombre: ").title()
-    if not nombre.isalpha():
-        print("Ingrese un nombre válido.")
+    name = input("Enter your name: ").title()
+    if not name.isalpha():
+        print("Please enter a valid name.")
     else: 
         break
 
 while True:
     while True:
-        edad = input("Ingrese su edad: ")
-        if not edad.isdigit() or '.' in edad or int(edad) > 100:
-            print("Ingrese una edad válida.")
+        age = input("Enter your age: ")
+        if not age.isdigit() or '.' in age or int(age) > 100:
+            print("Please enter a valid age.")
         else:
             break
-    if int(edad) < 17 or int(edad) > 21:
-        print("No cumple los requisitos de edad para acceder a la beca.")
+    if int(age) < 17 or int(age) > 21:
+        print("You don't meet the age requirements for the scholarship.")
         break
     break
 
-if int(edad) >= 17 and int(edad) <= 21:
+if int(age) >= 17 and int(age) <= 21:
     while True:
         while True:
-            nota_cuatrimestre_1 = float(input("Ingrese la nota final del primer cuatrimestre: "))
-            if nota_cuatrimestre_1 < 0 or nota_cuatrimestre_1 > 10.0:
-                print("Ingrese una nota válida")
+            first_term_grade = float(input("Enter the final grade of the first semester: "))
+            if first_term_grade < 0 or first_term_grade > 10.0:
+                print("Please enter a valid grade")
             else:
                 break
 
         while True:
-            nota_cuatrimestre_2 = float(input("Ingrese la nota final del segundo cuatrimestre: "))
-            if nota_cuatrimestre_2 < 0 or nota_cuatrimestre_2 > 10.0:
-                print("Ingrese una nota válida")
+            second_term_grade = float(input("Enter the final grade of the second semester: "))
+            if second_term_grade < 0 or second_term_grade > 10.0:
+                print("Please enter a valid grade")
             else:
                 break
 
         while True:
-            nota_cuatrimestre_3 = float(input("Ingrese la nota final del tercer cuatrimestre: "))
-            if nota_cuatrimestre_3 < 0 or nota_cuatrimestre_3 > 10.0:
-                print("Ingrese una nota válida")
+            third_term_grade = float(input("Enter the final grade of the third semester: "))
+            if third_term_grade < 0 or third_term_grade > 10.0:
+                print("Please enter a valid grade")
             else:
                 break
 
-        nota_final = (nota_cuatrimestre_1 + nota_cuatrimestre_2 + nota_cuatrimestre_3) / 3
+        final_grade = (first_term_grade + second_term_grade + third_term_grade) / 3
 
-        if nota_final <= 8:
-            print(f"Promedio nota final: {nota_final}")
-            print("No cumple los requisitos académicos para acceder a la beca.")
+        if final_grade <= 8:
+            print(f"Final average grade: {final_grade}")
+            print("You don't meet the academic requirements for the scholarship.")
         else:
-            print(f"Promedio nota final: {nota_final}")
-            print(f"Enhorabuena {nombre}, usted cumple con todos los requisitos para acceder a la beca")
+            print(f"Final average grade: {final_grade}")
+            print(f"Congratulations {name}, you meet all the requirements for the scholarship.")
         break
