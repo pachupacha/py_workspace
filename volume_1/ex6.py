@@ -1,4 +1,5 @@
-print("Restaurant 'The Galician'")
+print("Restaurant ´The Galician´")
+
 
 mixed_salad = input("Portions of Mixed Salad consumed at the table: ")
 fish_soup = input("Portions of Fish Soup consumed at the table: ")
