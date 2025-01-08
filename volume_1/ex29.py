@@ -9,7 +9,7 @@ while True:
     else:
         for i in range(int(user_range)):
             num_input = input(f"Input number {i + 1}: ")
-            while not num_input.isdigit():  # Verifica si el número ingresado es válido
+            while not num_input.isdigit():
                 print("Please input a valid integer number.")
                 num_input = input(f"Input number {i + 1}: ")
             number_list.append(int(num_input))
